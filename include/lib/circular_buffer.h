@@ -9,8 +9,6 @@
 
 #include <types.h>
 
-// s/\s*\\$/\=repeat(' ', 60-col('.')).'\'
-
 #define CIRCULAR_BUFFER_DEC(NAME, T, SIZE)                 \
 typedef struct NAME {                                      \
   T buf[SIZE];                                             \
